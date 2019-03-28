@@ -8,7 +8,7 @@ export default Controller.extend({
         updateSearchTerm (value) {
             //let value = target.target.value;
             this.set('searchTerm', value);
-            this.set('filteredTree', search(this.model.treeRoot, value.toLowerCase()));
+            this.set('filteredTree', search(this.model.treeRoot, value));
             //console.log(value);
         }
     }

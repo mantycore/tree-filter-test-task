@@ -10,7 +10,7 @@
    matched further to the root, so every node from it should be included in the result branch
    regardless of other factors.
 */
-export default function search(root, str, ancestorIsMatched = false) {
+function search(root, str, ancestorIsMatched = false) {
     let matched = false;
     let expanded = false;
     let children =  [];
@@ -50,4 +50,8 @@ export default function search(root, str, ancestorIsMatched = false) {
     } else {
         return null;
     }
+}
+
+export default function (root, str) {
+    return search(root, str.toLowerCase());
 }
