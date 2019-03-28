@@ -302,7 +302,7 @@
   _exports.default = void 0;
   const Router = Ember.Router.extend({
     location: _environment.default.locationType,
-    rootURL: _environment.default.rootURL
+    rootURL: '/tree-filter-test-task/'//_environment.default.rootURL
   });
   Router.map(function () {});
   var _default = Router;
