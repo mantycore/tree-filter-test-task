@@ -1,12 +1,12 @@
 /*
-   The function takes as a parameter a (root of a) tree and builds its subtree
+   The function takes as a argument a (root of a) tree and builds its subtree
    from nodes whose names contain a given subsring (and all their ancestors and descendants).
 
    Nodes annotated by attributes:
    * matched attribute is set to true for nodes with matching names, otherwise false
    * expanded attribute is set to true for nodes with any matching descendants, otherwise false
 
-   ancestorIsMatched is a housekeeping parameter meaning that the current branch was already
+   ancestorIsMatched is a housekeeping argument meaning that the current branch was already
    matched further to the root, so every node from it should be included in the result branch
    regardless of other factors.
 */
