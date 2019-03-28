@@ -1,0 +1,10 @@
+<div>
+  <p>
+    <span class={{if node.matched "matched"}}>{{node.name}}</span>
+  </p>
+  <div class="children {{unless node.expanded "hidden"}}">
+    {{#each node.children as |child|}}
+      <Treebranch @node={{child}} />
+    {{/each}}
+  </div>
+</div>

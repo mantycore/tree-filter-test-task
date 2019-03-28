@@ -1,0 +1,11 @@
+.matched {
+    background-color: wheat;
+}
+
+.children {
+    margin-left: 20px;
+}
+
+.hidden {
+    color: #aaaaaa;
+}
